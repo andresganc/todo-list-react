@@ -1,4 +1,10 @@
 
+# [<img src="redux-js/src/assets/img/redux-logo.png" width="400" />](https://es.redux.js.org/)
+
+
+
+<br>
+
 # REDUX - CURSO NC DE REDUX
 
 
@@ -6,7 +12,7 @@
 
 
 
-## Tabla de contenido
+## TABLA DE CONTENIDO
 
 - [Instalacion](#Instalacion)
 - [Que es redux?](#Que-es-redux?)
@@ -32,6 +38,7 @@
 ## Instalacion
 
     Instalación
+
     Para instalar la versión estable:
 
         $ npm i -S redux
@@ -46,6 +53,19 @@
 
     Si todavía no usas npm o algún empaquetador de módulos moderno, quizás prefieras el paquete en UMD que define Redux como un objeto global, puedes usar una desde cdnjs. No recomendamos este enfoque para ninguna aplicación seria, ya que la mayoría de las librerías complementarias a Redux está solo disponibles en npm.
 
+
+
+<br>
+
+## Extensiones o Plugins
+
+### Extension para Chrome
+
+    - Redux DevTools
+
+### Extension para Firefox
+
+    - Redux DevTools
 
 
 <br>
@@ -115,7 +135,11 @@
 
 ## Componentes redux
 
-    - En Redux podemos identificar 3 principales actores:
+<img >
+
+    - En Redux podemos identificar 3 principales actores y la Views o UI :
+
+<img src="redux-js/src/assets/img/redux-flujo.png" width="400" />
 
     El almacén
     Los reducers
@@ -123,7 +147,14 @@
 
     Además de estos, tenemos otros conceptos también importantes como El estado, los Action Creators y los enhancers (como plugins)
 
+    Flujo de redux con Subscribe & Dispatch :
 
+<img src="redux-js/src/assets/img/redux-diagrama.jpg" width="400" />
+
+    Todo el flujo de redux se hace en una sola via. ( Lo que hace que controlar toda la data sea mucho mas facil ). Todo se hace por medio de actions o acciones desencadenadas por el usuario o el programa que llevan a que los reducers cambien el estado dentro del Store y a su vez las views se alimentan de lo que hay en el store
+
+
+<br>
 <br>
 
 
@@ -190,7 +221,9 @@
 
     - Entender una tecnología en muchas ocasiones requiere que primero sepamos ¿por qué o para qué? Por eso vamos a dedicarle gran parte del post a explicarte por qué usar Redux, cuáles son los beneficios para tu aplicación y por qué deberías aprender.
 
+<img src="redux-js/src/assets/img/con-redux.png" width="400" />
 
+<br>
 <br>
 
 ### Rendimiento
@@ -252,6 +285,16 @@
 
     La tercera razón para usar Redux es: Puedes usar Redux en cualquier proyecto, sin importar el framework.
 
+
+<br>
+
+## Cuando usar redux
+
+    - Aconsejable cuando tenemos un proyecto que sabemos que va a crecer y que en cierto momento sabemos que el flujo de los estados puede empezar a convertirce en un problema.
+
+    - Cuando la aplicacion es pequeña no seria necesario. Con los que nos ofrece el framework visual bastaria. 
+
+    - Tambien se puede migrar un proyecto que no este aplicado redux. O se le puede aplicar a un aparte del proyecto y el resto que quede como estaba, O ir migrando poco a poco.
 
 
 
